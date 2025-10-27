@@ -4,13 +4,13 @@ metadata:
   name: online-shop-app
   namespace: argocd
 spec:
-  project: my-project
+  project: default
   source:
     repoURL: https://github.com/avengers400/argocd-demos.git    # Replace it with your forked repo
     targetRevision: main
     path: declarative_approach/online_shop
   destination:
-    server: https://D8AC1AB2298799BC2AB38182FEDAEE34.gr7.us-east-1.eks.amazonaws.com   # Replace with your Cluster Url, To get run: `argocd cluster list`
+    server: https://kubernetes.default.svc   # Replace with your Cluster Url, To get run: `argocd cluster list`
     namespace: default
   syncPolicy:
     automated:
