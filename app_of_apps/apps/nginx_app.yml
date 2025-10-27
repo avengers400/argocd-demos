@@ -2,9 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: nginx-child              # Child app name
-  namespace: argocd
+  namespace: frontend
 spec:
-  project: frontend
+  project: frontend-team
   source:
     repoURL: https://github.com/avengers400/argocd-demos.git # Repo containing child apps(that you have forked and cloned earlier)
     targetRevision: main
