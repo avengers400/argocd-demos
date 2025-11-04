@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - rishav23/chai-devops:v1.0.1
+  - rishav23/chai-devops:v1.0.0
